@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Enzo Tres Mediano</title>
+  <link href="{% static 'styles.css' %" rel="stylesheet" type="text/css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  {% load static %}
+  <link rel = "stylesheet" href = "{% static 'styles.css'%}">
+</head>
+
+<body>
+  
+  <h1>About me:</h1>
+  <mark>This page will be talking a litte about me</mark>
+  <h2>Favorite places i have lived</h2>
+  <ul>
+    <li>
+      <h4>{{liveds.0.titulo}} {{liveds.0.state}}</h4>
+    </li>
+    <div class="blue-center">
+      <div><img src="https://www.thecascadeteam.com/uploads/agent-58/Sammish%201%20in%2021.jpg" width="800"></div>
+      <p style="text-align: justify;">
+        <b>
+          <des>Filled with Forests with a wonder landscape only 50 minutes away from locatoins such as Seattle and
+            Bellevue.</des>
+        </b> <i>I lived here for 6 years</i>
+        More information: <a href="https://www.visitbellevuewa.com/plan/">here</a>
+      </p>
+    </div>
+    <li>
+      <h4>
+        {{liveds.1.titulo}} {{liveds.1.state}}
+      </h4>
+    </li>
+    <div class="blue-center">
+      <div><img
+          src="https://media.california.com/media/_versions_jpg/articles/shutterstock_1028985877__3992x2992____v1222x580__.jpg"
+          width="800"></div>
+      <p style="text-align: justify;">
+        <b>A small city filled with growth but quite an expensive area. </b><i>I lived here for 6 years</i>
+      </p>
+    </div>
+  </ul>
+  
+  <h2>Everywhere I've lived</h2>
+  <ol>
+    {% for lived in liveds %}
+      <li>
+        {{lived.titulo}} {{lived.state}} 
+        <a href = "/locals/update/{{ lived.id }}">Atualizar</a>
+        <a href = "/locals/delete/{{ lived.id }}">Remover</a>
+      </li> 
+    {% endfor %}
+  </ol>
+  
+  <a href = "/locals/create">Adiconar Novo local</a>
+  
+  <h2>Schools i've attended</h2>
+  <ul>
+    {% for school in schools %}
+      <li>
+        {{school.name}} {{school.level}} 
+        <a href = "/schools/update/{{ school.id }}">Atualizar</a>
+        <a href = "/schools/delete/{{ school.id }}">Remover</a>
+      </li> 
+    {% endfor %}
+  </ul>
+  <a href = "/schools/create">Adiconar Novo Escola</a>
+
+  
+  <h2>Mais algo que eu gosto: </h2>
+  <div class="blue-center">
+    <div><img src=https://catingtonpost.com/wp-content/uploads/2018/04/ThinkstockPhotos-510162326.jpg width="600"></div>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">What i approve of</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Python</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>no</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

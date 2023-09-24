@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/67214490/moving-an-app-from-a-django-project-to-another
+
+https://www.w3schools.com/django/django_admin_create_user.php
+
+https://realpython.com/django-migrations-a-primer/

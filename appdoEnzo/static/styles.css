@@ -1,0 +1,44 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h2 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h4 {
+  font-family: 'Georgia', Serif;
+}
+
+des {
+  font-family: 'Helvetica', Sans-serif
+}
+
+.blue-center{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+table{
+  padding: 1px solid #706ee2;
+  width: 25%
+}
+
+td {
+  border: 1px solid #706ee2;
+  text-align: center;
+}
+
+thead,tfoot {
+  background-color: #e458d8;
+}
+
+body {
+  background-image: url("https://i.kym-cdn.com/photos/images/newsfeed/002/652/460/d70.jpg");
+  background-position: center center;
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
+}

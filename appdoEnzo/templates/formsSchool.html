@@ -1,0 +1,38 @@
+<h1>{{ action }} Escola</h1>
+
+<form method = "post">
+  {% csrf_token %}
+  <div>
+    <label>Name:</label>
+    <input type = "text" name = "Name" value = "{{ School.name }}">
+  </div>
+
+  <div>
+    <label>Level:</label>
+    <select name = "Level" class = "form-control" value = "{{ School.level }}">
+      <option value = "Elementary">E</option>
+      <option value = "Middle">M</option>
+      <option value = "High">H</option>
+      <option value = "University">U</option>
+    </select>
+  </div>
+  
+  <div>
+    <label>City:</label>
+    <input type = "text" name = "City" value = "{{ School.city }}">
+  </div>
+
+  <div>
+    <label>Country:</label>
+    <input type = "text" name = "Country" value = "{{ School.country }}">
+  </div>
+
+  <div>
+    <label>State:</label>
+    <input type = "text" name = "State" value = "{{ School.state }}">
+  </div>
+  
+  <input type = "submit" value = "Register">
+
+  
+</form>

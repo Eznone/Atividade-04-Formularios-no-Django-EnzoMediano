@@ -1,0 +1,7 @@
+Voce tem certeza que deseja remover o item do pais "{{ item.country }}"?
+
+<form method = "post">
+  {% csrf_token %}
+  <input type = "submit" name = "confirm" value = "Sim">
+  <input type = "submit" value = "Nao">
+</form>

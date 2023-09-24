@@ -1,0 +1,28 @@
+<h1>{{ action }} Local</h1>
+
+<form method = "post">
+  {% csrf_token %}
+  <div>
+    <label>Titulo:</label>
+    <input type = "text" name = "Titulo" value = "{{ lived.titulo }}">
+  </div>
+  
+  <div>
+    <label>Country:</label>
+    <input type = "text" name = "Country" value = "{{ lived.country }}">
+  </div>
+
+  <div>
+    <label>State:</label>
+    <input type = "text" name = "State" value = "{{ lived.state }}">
+  </div>
+
+  <div>
+    <label>Years:</label>
+    <input type = "text" name = "Years" value = "{{ lived.years }}">
+  </div>
+  
+  <input type = "submit" value = "Register">
+
+  
+</form>
