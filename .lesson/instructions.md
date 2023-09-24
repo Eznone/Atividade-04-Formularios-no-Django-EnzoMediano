@@ -1,11 +1,14 @@
-# Atividade 04
+# Atividade 05
 
-**PRINCIPAL (700XP)**
-- Criar um novo template com formulário para cada modelo criado;
-- Associar cada template a uma nova view e url separadas (bem como foi feito no vídeo);
-- Adicionar um link para a página de "CREATE" do modelo na "home.html"
-- Para cada item de cada lista (ul e ol), deve haver um link para editar e remover ele (passando o id pra url);
-- Devem ser criadas novas urls para edição e remoção de um item, para cada modelo criado;
+**PRINCIPAL (900XP)**
+- Adicionar uma view e um template de Registro de usuário;
+- Adicionar uma view e um template para login do usuário;
+- Todas as URLs, exceto as de registro e login, só poderão ser acessadas caso o usuário esteja logado;
+- O usuário deve poder se deslogar através de um link na página;
+- Consertar todos os problemas indicados nos feedbacks dos trabalhos anteriores, ou seja, tudo deve estar funcionando como esperado;
+- Vincular a sua Atividade com o seu GitHub e deixar o repositório atualizado;
 
 **EXTRA (200XP)**
-- Fazer os formulários usando Django Forms (forms.py).
+- Esqueceu a senha e CRUD completo do usuário devem estar funcionando.
+
+DICA: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Authentication
